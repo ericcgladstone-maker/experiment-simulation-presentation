@@ -1,0 +1,9 @@
+# Cloudflare Workers Static Assets, asset-only (no Worker script), like the proposal-audit presentation.
+# Deploy with:  npx wrangler deploy   (from this folder)
+# Serves at https://experimentsimulation.eric-c-gladstone.workers.dev
+name = "experimentsimulation"
+compatibility_date = "2026-09-28"
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
